@@ -1,0 +1,10 @@
+services:
+  postgres:
+    container_name: projeto_cadastro_login_postgres
+    image: postgres:15
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: projeto_cadastro_login
