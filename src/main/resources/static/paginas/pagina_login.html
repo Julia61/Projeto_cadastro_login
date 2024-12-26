@@ -6,9 +6,12 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/tela_media.css">
-    <link rel="stylesheet" href="estilos/tela_grande.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="stylesheet" href="estilos/login.css">
+    <link rel="stylesheet" href="estilos/tela_media_login.css">
+    <link rel="stylesheet" href="estilos/tela_grande.css">
+
 </head>
 <body>
 
@@ -17,28 +20,19 @@
 
     </div>
     <div id="formulario">
-        <h1>Cadastro</h1>
-        <p>Bem-vindo(a)!
-            Cadastre-se para acessar todas as funcionalidades.
-            Preencha os campos abaixo e aproveite ao máximo a nossa plataforma!</p>
-        <form id="cadastroForms">
+        <h1>Login</h1>
+        <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+        <form id="loginForms">
 
-            <div class="campo">
 
-                    <span class="material-symbols-outlined">
-                        person
-                        </span>
-                <input type="text" name="nome" id="usuarioCadastro" required>
-                <label for="usuarioCadastro">Usuario</label>
-            </div>
 
             <div class="campo">
 
                     <span class="material-symbols-outlined">
                         mail
                         </span>
-                <input type="email" name="email" id="emailCadastro" required>
-                <label for="emailCadastro">Email</label>
+                <input type="email" name="email" id="emaillogin" required>
+                <label for="emaillogin">Email</label>
             </div>
 
             <div class="campo">
@@ -46,11 +40,11 @@
                     <span class="material-symbols-outlined">
                         vpn_key
                         </span>
-                <input type="password" name="senha" id="senhaCadastro" min="10" max="70" required>
-                <label for="senhaCadastro">Senha</label>
+                <input type="password" name="senha" id="senhalogin" min="10" max="70" required>
+                <label for="senhalogin">Senha</label>
             </div>
 
-            <button  type="button" id="cadastroBtn" onclick="cadastro()">Cadastro</button>
+            <button  type="button" id="loginrBtn" onclick="login()">Logar</button>
 
         </form>
         <button class="hidden" id="btnLogin">Login</button>

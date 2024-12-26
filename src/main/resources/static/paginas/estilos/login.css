@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: rgb(89, 100, 72);
+    background-color: #536B53;
     display: flex;
     justify-content: center;
     height: 100vh;
@@ -19,7 +19,7 @@ body{
 }
 
 #imagem{
-    background-image: url(../background.jpg);
+    background-image: url(../fundoLogin.jpg);
     background-position: center center;
     background-size: cover;
     height: 150px;
@@ -28,7 +28,7 @@ body{
 #formulario > h1 {
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.374);
     text-align: center;
-    color: rgb(166, 125, 3);
+    color: #754b2b;
 }
 
 label {
@@ -45,9 +45,18 @@ label {
 .campo{
     display: flex;
     align-items: center;
-    background-color: rgb(89, 100, 72);
+    background-color: #424F35;
     margin: 5px;
     border-radius: 10px;
+}
+
+#btnLogin{
+    color: white;
+    padding: 2px;
+    margin: 5px;
+    background-color: rgb(168, 145, 73);
+    border-radius: 10px;
+    border: none;
 }
 
 
@@ -55,12 +64,14 @@ label {
 input {
     width: calc(100% - 10px);
     margin: 5px;
+
+    font-weight: normal;
     border-radius: 10px;
     border: 1px solid black;
 
 }
 
-#cadastroForms{
+#loginForms{
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -70,20 +81,10 @@ button {
     color: white;
     padding: 2px;
     margin: 5px;
-    background-color: rgb(171, 157, 115);
+    background-color: rgb(132, 121, 89);
     border-radius: 10px;
     border: none;
 
-}
-
-#btnLogin{
-    width:calc(100% - 10px);
-    color: white;
-    margin: auto 5px;
-
-    background-color: rgb(168, 145, 73);
-    border-radius: 10px;
-    border: none;
 }
 
 #formulario > p {
@@ -94,10 +95,11 @@ button {
 }
 
 section {
+
     overflow: hidden;
     border-radius: 10px;
     width: 200px;
-    height: 410px;
+    height: 380px;
     background-color: rgb(216, 215, 212);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.365);
 }

@@ -1,0 +1,31 @@
+@media screen and (min-width: 1024px) {
+
+    body {
+        background-image: linear-gradient(to right, #532f21ab, #424F35, #536B53);
+    }
+
+    #imagem{
+
+        background-size: cover;
+        width: 350px;
+        height: 100%;
+    }
+
+    #formulario{
+        margin-top: 40px;
+    }
+
+    #formulario > p {
+        padding: 5px;
+        text-align: center;
+        font-weight: normal;
+        font-size: 0.7em;
+    }
+
+    section{
+        display: flex;
+        flex-flow: row-reverse;
+        width: 470px;
+        height: 300px;
+    }
+}
