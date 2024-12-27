@@ -15,17 +15,25 @@
         margin-top: 35px;
     }
 
+    input {
+        padding: 3px;
+    }
+
+    #loginrBtn{
+        padding: 4px;
+    }
+
     #formulario > p {
         padding: 5px;
         text-align: center;
         font-weight: normal;
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
 
     section{
         display: flex;
         flex-flow: row;
-        width: 420px;
-        height: 300px;
+        width: 550px;
+        height: 350px;
     }
 }

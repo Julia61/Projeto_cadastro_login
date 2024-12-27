@@ -90,14 +90,14 @@ button {
     padding: 4px;
     text-align: center;
     font-weight: normal;
-    font-size: 0.62em;
+    font-size: 0.7em;
 }
 
 section {
     overflow: hidden;
     border-radius: 10px;
-    width: 200px;
-    height: 410px;
+    width: 220px;
+    height: 430px;
     background-color: rgb(216, 215, 212);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.365);
 }

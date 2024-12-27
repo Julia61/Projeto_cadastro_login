@@ -7,7 +7,7 @@
     #imagem{
 
         background-size: cover;
-        width: 350px;
+        width: 500px;
         height: 100%;
     }
 
@@ -19,13 +19,13 @@
         padding: 5px;
         text-align: center;
         font-weight: normal;
-        font-size: 0.7em;
+        font-size: 1em;
     }
 
     section{
         display: flex;
         flex-flow: row-reverse;
-        width: 470px;
-        height: 300px;
+        width: 600px;
+        height: 370px;
     }
 }

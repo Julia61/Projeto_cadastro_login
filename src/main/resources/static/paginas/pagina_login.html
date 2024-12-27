@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="estilos/login.css">
     <link rel="stylesheet" href="estilos/tela_media_login.css">
-    <link rel="stylesheet" href="estilos/tela_grande.css">
+    <link rel="stylesheet" href="estilos/tela_grande_login.css">
 
 </head>
 <body>
@@ -25,6 +25,15 @@
         <form id="loginForms">
 
 
+            <div class="campo">
+
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                <input type="email" name="email" id="usuariologin" required>
+                <label for="emaillogin">Email</label>
+            </div>
+
 
             <div class="campo">
 
@@ -34,6 +43,7 @@
                 <input type="email" name="email" id="emaillogin" required>
                 <label for="emaillogin">Email</label>
             </div>
+
 
             <div class="campo">
 
@@ -47,11 +57,10 @@
             <button  type="button" id="loginrBtn" onclick="login()">Logar</button>
 
         </form>
-        <button class="hidden" id="btnLogin">Login</button>
     </div>
 </section>
 
-<script src="script.js"></script>
+<script src="login.js"></script>
 
 </body>
 </html>
