@@ -2,6 +2,7 @@ package br.com.juliasilva.main.controlador;
 
 
 import br.com.juliasilva.main.casoDeUso.LoginUsuario;
+import br.com.juliasilva.main.dto.AutorDTO;
 import br.com.juliasilva.main.usuario.CadrastroEntidade;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,9 +20,9 @@ public class LoginControlador {
     private LoginUsuario loginUsuario;
 
     @PostMapping("/login")
-    public ResponseEntity<Object> login(@Valid @RequestBody CadrastroEntidade cadrastroEntidade){
+    public ResponseEntity<Object> login(@Valid @RequestBody AutorDTO autorDTO){
         try {
-            boolean resultado = this.loginUsuario.execute(cadrastroEntidade);
+            boolean resultado = this.loginUsuario.execute(autorDTO);
             if(resultado) {
                 return ResponseEntity.ok().body("Login realizado com sucesso.");
             }else {

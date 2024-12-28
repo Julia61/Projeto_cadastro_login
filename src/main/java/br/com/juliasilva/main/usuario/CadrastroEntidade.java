@@ -10,12 +10,14 @@ import jakarta.validation.constraints.Pattern;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.validator.constraints.Length;
+import org.springframework.context.annotation.Bean;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Data
 @Entity(name = "cadrastro")
+
 public class CadrastroEntidade {
 
 

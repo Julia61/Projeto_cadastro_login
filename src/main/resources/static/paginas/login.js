@@ -1,16 +1,14 @@
 function login(){
     const email = document.getElementById("emaillogin").value
-    const usuario = document.getElementById("usuariologin").value
     const senha = document.getElementById("senhalogin").value
 
 
 
-    if(usuario && email && senha){
+    if(email && senha){
 
         const loginUser = {
             email:email,
             senha:senha,
-            usuario:usuario,
 
         };
 
