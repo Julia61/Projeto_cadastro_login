@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.juliasilva</groupId>
-	<artifactId>projeto_cadrastro_login</artifactId>
+	<artifactId>projeto_cadastro_login</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>projeto cadrastro e login</name>
-	<description>projeto para criar um cadrastro de um usuário e depois fazer o login</description>
+	<name>projeto cadastro e login</name>
+	<description>projeto para criar um cadastro de um usuário e depois fazer o login</description>
 	<url/>
 	<licenses>
 		<license/>
