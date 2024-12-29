@@ -20,7 +20,6 @@ public class Seguranca {
 
                 });
 
-
         return https.build();
     }
 
