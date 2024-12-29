@@ -15,7 +15,8 @@ public class Seguranca {
         https.csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> {
                     auth.requestMatchers("/cadastro/usuario").permitAll()
-                            .requestMatchers("/cadastro/login").permitAll();
+                            .requestMatchers("/cadastro/login").permitAll()
+                            .requestMatchers("/cadastro/bemVindo").permitAll();
 
                 });
 
