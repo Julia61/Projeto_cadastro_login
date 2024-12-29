@@ -60,11 +60,9 @@ label {
 }
 
 
-
 input {
     width: calc(100% - 10px);
     margin: 5px;
-
     font-weight: normal;
     border-radius: 10px;
     border: 1px solid black;
@@ -78,6 +76,7 @@ input {
 }
 
 button {
+    font-size: 0.9em;
     color: white;
     padding: 2px;
     margin: 5px;
@@ -92,6 +91,19 @@ button {
     text-align: center;
     font-weight: normal;
     font-size: 0.67em;
+}
+
+#indoProCadastro{
+        width:calc(100% - 10px);
+        color: white;
+        font-size: 0.9em;
+        padding: 2px;
+        margin: 10px auto;
+        text-align: center;
+        text-decoration: none;
+        background-color: #754b2b;
+        border-radius: 10px;
+        border: none;
 }
 
 section {

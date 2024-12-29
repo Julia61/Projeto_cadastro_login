@@ -12,7 +12,14 @@ public class Seguranca {
 
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity https) throws Exception {
-        https.csrf(csrf -> csrf.disable());
+        https.csrf(csrf -> csrf.disable())
+                .authorizeHttpRequests(auth -> {
+                    auth.requestMatchers("/cadastro/usuario").permitAll()
+                            .requestMatchers("/cadastro/login").permitAll();
+
+                });
+
+
         return https.build();
     }
 

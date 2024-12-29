@@ -11,6 +11,10 @@
         height: 100%;
     }
 
+    input {
+       padding: 3px;
+    }
+
     #formulario{
         margin-top: 40px;
     }

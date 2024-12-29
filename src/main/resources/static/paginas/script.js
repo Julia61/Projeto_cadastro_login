@@ -5,12 +5,6 @@ function cadastro(){
     const btnCadastro = document.getElementById("cadastroBtn")
     const btnLogin = document.getElementById('btnLogin');
 
-    if (!email.includes("@")) {
-      alert("E-mail inválido!");
-      document.getElementById("emailCadastro").value = "";
-      return;
-    }
-
 
     if(usuario && email && senha){
 
@@ -19,6 +13,26 @@ function cadastro(){
             email:email,
             senha:senha,
         };
+
+        if (!email.includes("@")) {
+              alert("[ERRO] O e-mail deve conter '@'");
+              document.getElementById("emailCadastro").value = "";
+              return;
+        }
+
+        if(senha.length  < 10){
+             alert("[ERRO] A senha deve ter no mínimo 10 caracteres")
+             const senha = document.getElementById("senhaCadastro").value = "";
+             return;
+        }
+
+        if(usuario.includes(" ")){
+            alert("[ERRO] O nome de usuário não deve conter espaços!!")
+            const usuario = document.getElementById("usuarioCadastro").value = "";
+            return;
+        }
+
+
 
         fetch("http://localhost:8080/cadastro/usuario", {
             method: "POST",
@@ -46,9 +60,6 @@ function cadastro(){
         alert("Por favor, preencha todos os dados!!")
     }
 
-    //btnLogin.addEventListener('click', () => {
-        // Simula o redirecionamento para outra página
-        //window.location.href = 'pagina_login.html'; // Altere para o nome da página de login
-    //});
+
 
 }
