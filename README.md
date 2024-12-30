@@ -106,7 +106,7 @@ mvn spring-boot:run
 {
   "usuario": "Julia",
   "email": "ju@gmail.com",
-  "senha": "1234a"
+  "senha": "1234567890"
 }
             </code>
         </pre>
@@ -126,7 +126,7 @@ mvn spring-boot:run
 <code>
 {
   "email": "ju@gmail.com",
-  "senha": "1234a"
+  "senha": "1234567890"
 }
  </code>
         </pre>
