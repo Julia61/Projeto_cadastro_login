@@ -16,7 +16,7 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Data
-@Entity(name = "cadrastro")
+@Entity(name = "cadastro")
 
 public class CadrastroEntidade {
 

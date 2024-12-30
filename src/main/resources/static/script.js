@@ -44,8 +44,10 @@ function cadastro(){
         .then(response => {
             if(response.ok) {
                 alert("Usuário cadastrado com sucesso!");
-
                 window.location.href = 'pagina_login.html';
+                const usuario = document.getElementById("usuarioCadastro").value = "";
+                    const email = document.getElementById("emailCadastro").value = "";
+                    const senha = document.getElementById("senhaCadastro").value = "";
 
             }else {
                 alert("Usuário já existe! Erro ao cadastrar usuário.");

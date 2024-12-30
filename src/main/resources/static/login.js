@@ -3,7 +3,6 @@ function login(){
     const senha = document.getElementById("senhalogin").value
 
 
-
     if(email && senha){
 
         const loginUser = {
@@ -36,8 +35,12 @@ function login(){
             if(response.ok){
                 alert("Login realizado com sucesso! Bem-vindo(a)!")
                 window.location.href = 'bemVindo.html';
+                const email = document.getElementById("emaillogin").value = "";
+                const senha = document.getElementById("senhalogin").value = "";
             }else{
                 alert("[ERRO] Usuário não encontrado. Verifique os dados ou faça o cadastro.")
+                const email = document.getElementById("emaillogin").value = "";
+                const senha = document.getElementById("senhalogin").value = "";
             }
         })
         .catch(error => {
