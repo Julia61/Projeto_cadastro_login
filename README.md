@@ -12,3 +12,23 @@ Bem-vindo ao projeto de Cadastro e Login, uma aplicação desenvolvida para prat
         <li><strong>Banco de Dados PostgreSQL</strong>: Gerenciamento de dados de usuários utilizando Spring Data JPA.</li>
         <li><strong>Interface Responsiva</strong>: Layout minimalista e adaptável para diferentes dispositivos.</li>
     </ul>
+
+<h2>Tecnologias Utilizadas</h2>
+    <h3>Back-End</h3>
+    <ul>
+        <li><strong>Java 17</strong></li>
+        <li><strong>Spring Boot</strong></li>
+        <ul>
+            <li>Spring Data JPA</li>
+            <li>Spring Security</li>
+        </ul>
+        <li><strong>PostgreSQL</strong></li>
+        <li><strong>Docker</strong> (para gerenciamento do banco de dados)</li>
+        <li><strong>BCrypt</strong> (criptografia de senhas)</li>
+    </ul>
+    <h3>Front-End</h3>
+    <ul>
+        <li><strong>HTML5</strong></li>
+        <li><strong>CSS3</strong></li>
+        <li><strong>JavaScript</strong> - <code>fetch()</code> para chamadas à API</li>
+    </ul>
