@@ -134,7 +134,7 @@ mvn spring-boot:run
         <li>Integração com bibliotecas de front-end modernas como React ou Vue.js.</li>
     </ul>
 
-<p>Desenvolvido com dedicação por <strong>Julia Silva</strong>. 🚀</p>
+<p>Desenvolvido com dedicação por <a href="https://github.com/Julia61" target="_blank"><strong>Julia</strong></a>. 🚀</p>
 
 
     
