@@ -40,6 +40,27 @@ Bem-vindo ao projeto de Cadastro e Login, uma aplicação desenvolvida para prat
         <li><strong>Maven</strong> instalado</li>
         <li><strong>Docker</strong> e <strong>Docker Compose</strong> configurados</li>
     </ul>
+
+<h3>Passos</h3>
+    <pre>
+        <code>
+1. Clone o repositório:
+   git clone https://github.com/seu-usuario/projeto-cadastro-login.git
+
+2. Navegue até a pasta do projeto:
+   cd projeto-cadastro-login
+
+3. Suba o banco de dados PostgreSQL com Docker:
+   docker-compose up -d
+
+4. Execute o projeto com Maven:
+   mvn spring-boot:run
+
+5. Acesse a aplicação:
+   Endpoints da API: http://localhost:8080
+   Interface front-end: http://localhost:63342 (ajuste conforme o ambiente local)
+        </code>
+    </pre>
     
 
     
