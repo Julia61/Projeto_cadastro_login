@@ -32,3 +32,12 @@ Bem-vindo ao projeto de Cadastro e Login, uma aplicação desenvolvida para prat
         <li><strong>CSS3</strong></li>
         <li><strong>JavaScript</strong> - <code>fetch()</code> para chamadas à API</li>
     </ul>
+
+    <h2>Como Executar o Projeto</h2>
+    <h3>Requisitos</h3>
+    <ul>
+        <li><strong>Java 17</strong> ou superior</li>
+        <li><strong>Maven</strong> instalado</li>
+        <li><strong>Docker</strong> e <strong>Docker Compose</strong> configurados</li>
+    </ul>
+
