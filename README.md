@@ -1,5 +1,3 @@
-<h1>Projeto de Cadastro e Login</h1>
-
 <section>
   <h1>Bem-vindo ao Projeto de Cadastro e Login</h1>
   <p>
