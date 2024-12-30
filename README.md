@@ -84,6 +84,58 @@ mvn spring-boot:run
     </li>
 </ol>
 
+<h2>Endpoints Disponíveis</h2>
+    <h3>Cadastro de Usuário</h3>
+    <div class="highlight">
+        <strong>POST</strong> <code>/cadastro/usuario</code>
+        <br>
+        <strong>Body (JSON):</strong>
+        <pre>
+            <code>
+{
+  "usuario": "Julia",
+  "email": "ju@gmail.com",
+  "senha": "1234a"
+}
+            </code>
+        </pre>
+        <strong>Respostas:</strong>
+        <ul>
+            <li><strong>200 OK</strong>: Usuário cadastrado com sucesso.</li>
+            <li><strong>400 Bad Request</strong>: Usuário ou e-mail já existentes.</li>
+        </ul>
+    </div>
+
+    <h3>Login de Usuário</h3>
+    <div class="highlight">
+        <strong>POST</strong> <code>/cadastro/login</code>
+        <br>
+        <strong>Body (JSON):</strong>
+        <pre>
+            <code>
+{
+  "email": "ju@gmail.com",
+  "senha": "1234a"
+}
+            </code>
+        </pre>
+        <strong>Respostas:</strong>
+        <ul>
+            <li><strong>200 OK</strong>: Login realizado com sucesso.</li>
+            <li><strong>401 Unauthorized</strong>: Credenciais inválidas.</li>
+            <li><strong>500 Internal Server Error</strong>: Erro interno do servidor.</li>
+        </ul>
+    </div>
+
+<h2>Melhorias Futuras</h2>
+    <ul>
+        <li>Implementação de JWT para autenticação.</li>
+        <li>Criação de testes unitários e de integração.</li>
+        <li>Integração com bibliotecas de front-end modernas como React ou Vue.js.</li>
+    </ul>
+
+<p>Desenvolvido com dedicação por <strong>Julia Silva</strong>. 🚀</p>
+
 
     
 
