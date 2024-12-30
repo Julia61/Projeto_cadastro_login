@@ -58,7 +58,7 @@
         <strong>Clone o repositório:</strong>
         <pre>
             <code>
-git clone https://github.com/seu-usuario/projeto-cadastro-login.git
+https://github.com/Julia61/Projeto_cadastro_login.git
             </code>
         </pre>
     </li>
