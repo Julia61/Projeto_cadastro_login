@@ -42,25 +42,48 @@ Bem-vindo ao projeto de Cadastro e Login, uma aplicação desenvolvida para prat
     </ul>
 
 <h3>Passos</h3>
-    <pre>
-        <code>
-1. Clone o repositório:
-   git clone https://github.com/seu-usuario/projeto-cadastro-login.git
+<ol>
+    <li>
+        <strong>Clone o repositório:</strong>
+        <pre>
+            <code>
+git clone https://github.com/seu-usuario/projeto-cadastro-login.git
+            </code>
+        </pre>
+    </li>
+    <li>
+        <strong>Navegue até a pasta do projeto:</strong>
+        <pre>
+            <code>
+cd projeto-cadastro-login
+            </code>
+        </pre>
+    </li>
+    <li>
+        <strong>Suba o banco de dados PostgreSQL com Docker:</strong>
+        <pre>
+            <code>
+docker-compose up -d
+            </code>
+        </pre>
+    </li>
+    <li>
+        <strong>Execute o projeto com Maven:</strong>
+        <pre>
+            <code>
+mvn spring-boot:run
+            </code>
+        </pre>
+    </li>
+    <li>
+        <strong>Acesse a aplicação:</strong>
+        <ul>
+            <li>Endpoints da API: <code>http://localhost:8080</code></li>
+            <li>Interface front-end: <code>http://localhost:63342</code> (ajuste conforme o ambiente local)</li>
+        </ul>
+    </li>
+</ol>
 
-2. Navegue até a pasta do projeto:
-   cd projeto-cadastro-login
-
-3. Suba o banco de dados PostgreSQL com Docker:
-   docker-compose up -d
-
-4. Execute o projeto com Maven:
-   mvn spring-boot:run
-
-5. Acesse a aplicação:
-   Endpoints da API: http://localhost:8080
-   Interface front-end: http://localhost:63342 (ajuste conforme o ambiente local)
-        </code>
-    </pre>
     
 
     
