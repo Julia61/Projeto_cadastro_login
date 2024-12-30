@@ -47,7 +47,7 @@ Bem-vindo ao projeto de Cadastro e Login, uma aplicação desenvolvida para prat
         <strong>Clone o repositório:</strong>
         <pre>
             <code>
-                git clone https://github.com/seu-usuario/projeto-cadastro-login.git
+git clone https://github.com/seu-usuario/projeto-cadastro-login.git
             </code>
         </pre>
     </li>
@@ -55,7 +55,7 @@ Bem-vindo ao projeto de Cadastro e Login, uma aplicação desenvolvida para prat
         <strong>Navegue até a pasta do projeto:</strong>
         <pre>
             <code>
-                cd projeto-cadastro-login
+cd projeto-cadastro-login
             </code>
         </pre>
     </li>
@@ -63,7 +63,7 @@ Bem-vindo ao projeto de Cadastro e Login, uma aplicação desenvolvida para prat
         <strong>Suba o banco de dados PostgreSQL com Docker:</strong>
         <pre>
             <code>
-                docker-compose up -d
+docker-compose up -d
             </code>
         </pre>
     </li>
@@ -71,7 +71,7 @@ Bem-vindo ao projeto de Cadastro e Login, uma aplicação desenvolvida para prat
         <strong>Execute o projeto com Maven:</strong>
         <pre>
             <code>
-                mvn spring-boot:run
+mvn spring-boot:run
             </code>
         </pre>
     </li>
@@ -83,6 +83,7 @@ Bem-vindo ao projeto de Cadastro e Login, uma aplicação desenvolvida para prat
         </ul>
     </li>
 </ol>
+
 
     
 
