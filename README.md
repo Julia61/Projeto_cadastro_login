@@ -1,7 +1,20 @@
 <h1>Projeto de Cadastro e Login</h1>
 
-Bem-vindo ao projeto de Cadastro e Login, uma aplicação desenvolvida para praticar conceitos fundamentais de Java, Spring Boot e integração com front-end. Este repositório contém o código completo da aplicação, desde a estrutura back-end até o front-end responsivo.
-![Demonstração do projeto](https://github.com/user-attachments/assets/db881a14-0d8d-4434-800c-ac7e83fb8597)
+<section>
+  <h1>Bem-vindo ao Projeto de Cadastro e Login</h1>
+  <p>
+    Uma aplicação desenvolvida para praticar conceitos fundamentais de <strong>Java</strong>, 
+    <strong>Spring Boot</strong> e integração com <strong>front-end</strong>. Este repositório contém o código 
+    completo da aplicação, desde a estrutura back-end até o front-end responsivo.
+  </p>
+  <div style="text-align: center; margin: 20px 0;">
+    <img 
+      src="https://github.com/user-attachments/assets/db881a14-0d8d-4434-800c-ac7e83fb8597" 
+      alt="Demonstração do projeto" 
+      style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 8px;"
+    />
+  </div>
+</section>
 
 <h2>Funcionalidades</h2>
     <ul>
