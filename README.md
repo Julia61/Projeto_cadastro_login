@@ -106,18 +106,18 @@ mvn spring-boot:run
         </ul>
     </div>
 
-    <h3>Login de Usuário</h3>
+<h3>Login de Usuário</h3>
     <div class="highlight">
         <strong>POST</strong> <code>/cadastro/login</code>
         <br>
         <strong>Body (JSON):</strong>
         <pre>
-            <code>
+<code>
 {
   "email": "ju@gmail.com",
   "senha": "1234a"
 }
-            </code>
+ </code>
         </pre>
         <strong>Respostas:</strong>
         <ul>
