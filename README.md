@@ -95,6 +95,32 @@ mvn spring-boot:run
     </li>
 </ol>
 
+<section>
+  <h2>Estrutura do Projeto</h2>
+  <pre style="background-color: #f4f4f4; padding: 15px; border-radius: 8px; border: 1px solid #ddd; overflow-x: auto;">
+projeto-cadastro-login
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   ├── br.com.juliasilva.main
+│   │   │   │   ├── casoDeUso
+│   │   │   │   ├── controlador
+│   │   │   │   ├── cripto
+│   │   │   │   ├── dto
+│   │   │   │   ├── excecao
+│   │   │   │   ├── repositorio
+│   │   │   │   └── usuario
+│   │   ├── resources
+│   │       ├── application.properties
+├── static
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+└── docker-compose.yml
+  </pre>
+</section>
+
+
 <h2>Endpoints Disponíveis</h2>
     <h3>Cadastro de Usuário</h3>
     <div class="highlight">
