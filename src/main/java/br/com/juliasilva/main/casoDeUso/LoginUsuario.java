@@ -30,9 +30,7 @@ public class LoginUsuario {
         return loginRepositorio
                 .findByEmail(autorDTO.getEmail())
                 .map(login -> passwordEncoder.matches(autorDTO.getSenha(), login.getSenha()))
-                .orElse(false);
+                .orElseThrow(()-> new RuntimeException("Usuário com email " + autorDTO.getEmail() + " não encontrado."));
     }
-
-
 
 }

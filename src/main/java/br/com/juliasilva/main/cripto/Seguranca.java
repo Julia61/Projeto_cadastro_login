@@ -16,7 +16,7 @@ public class Seguranca {
                 .authorizeHttpRequests(auth -> {
                     auth.requestMatchers("/cadastro/usuario").permitAll()
                             .requestMatchers("/cadastro/login").permitAll()
-                            .requestMatchers("/cadastro/bemVindo").permitAll();
+                            .requestMatchers("/user/dados-token").permitAll();
 
                 });
 

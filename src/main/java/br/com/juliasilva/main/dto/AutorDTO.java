@@ -1,6 +1,4 @@
 package br.com.juliasilva.main.dto;
-
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 

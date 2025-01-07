@@ -1,6 +1,5 @@
 package br.com.juliasilva.main.casoDeUso;
 
-import br.com.juliasilva.main.cripto.Seguranca;
 import br.com.juliasilva.main.excecao.EncontradaExcecao;
 import br.com.juliasilva.main.repositorio.CadrastroRepositorio;
 import br.com.juliasilva.main.usuario.CadrastroEntidade;
@@ -9,7 +8,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
-public class CriarCadrastroUsuario {
+public class CriarCadastroUsuario {
 
     @Autowired
     private CadrastroRepositorio cadrastroRepositorio;

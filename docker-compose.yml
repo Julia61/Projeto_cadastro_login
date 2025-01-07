@@ -5,6 +5,6 @@ services:
     ports:
       - 5432:5432
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: projeto_cadastro_login
+      - SPRING_DATASOURCE_USERNAME=${USER_POSTGRES}
+      - SPRING_DATASOURCE_PASSWORD=${PASSWORD_POSTGRES}
+      - SPRING_APPLICATION_NAME=projeto_cadastro_login

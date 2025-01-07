@@ -1,6 +1,6 @@
 package br.com.juliasilva.main.controlador;
 
-import br.com.juliasilva.main.casoDeUso.CriarCadrastroUsuario;
+import br.com.juliasilva.main.casoDeUso.CriarCadastroUsuario;
 import br.com.juliasilva.main.usuario.CadrastroEntidade;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,14 +10,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Objects;
-
 @RestController
 @RequestMapping("/cadastro")
 public class CadastroControlador {
 
     @Autowired
-    private CriarCadrastroUsuario criarCadrastroUsuario;
+    private CriarCadastroUsuario criarCadrastroUsuario;
 
     @PostMapping("/usuario")
     public ResponseEntity<Object> usuario(@Valid @RequestBody CadrastroEntidade cadrastroEntidade){
