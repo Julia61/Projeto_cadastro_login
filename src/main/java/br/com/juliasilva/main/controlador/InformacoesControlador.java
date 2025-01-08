@@ -20,11 +20,11 @@ import java.util.Optional;
 @RequestMapping("/user")
 public class InformacoesControlador {
 
-    @Autowired
-    private JWTProvedor jwtProvedor;
+
 
     @Autowired
     private UsuarioRepositorio usuarioRepositorio;
+
     @GetMapping("/dados-token")
     public ResponseEntity<Object> getTokenData(HttpServletRequest request) {
         try {

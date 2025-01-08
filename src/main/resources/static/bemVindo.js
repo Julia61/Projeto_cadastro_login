@@ -18,5 +18,5 @@ async function verificarToken() {
     }
 }
 
-// Verificar token periodicamente (ex: a cada 5 minutos)
+
 setInterval(verificarToken, 5 * 60 * 1000);

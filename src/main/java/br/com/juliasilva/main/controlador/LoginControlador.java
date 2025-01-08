@@ -1,6 +1,5 @@
 package br.com.juliasilva.main.controlador;
 
-
 import br.com.juliasilva.main.casoDeUso.LoginUsuario;
 import br.com.juliasilva.main.dto.AutorDTO;
 import br.com.juliasilva.main.provedor.JWTProvedor;
@@ -37,7 +36,6 @@ public class LoginControlador {
         try {
             boolean resultado = this.loginUsuario.execute(autorDTO);
 
-
             if (resultado) {
 
                 String token = jwtProvedor.gerarToken(autorDTO);
@@ -46,10 +44,9 @@ public class LoginControlador {
                 cookie.setHttpOnly(true);
                 cookie.setSecure(true);
                 cookie.setPath("/");
-                cookie.setMaxAge((int) TimeUnit.HOURS.toSeconds(1));//mudar horas
+                cookie.setMaxAge((int) TimeUnit.MINUTES.toSeconds(30));
 
                 response.addCookie(cookie);
-
 
                 return ResponseEntity.ok(token);
             }else {

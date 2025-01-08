@@ -17,6 +17,7 @@ public class CadastroControlador {
     @Autowired
     private CriarCadastroUsuario criarCadrastroUsuario;
 
+    //Cria o cadastro do usuário
     @PostMapping("/usuario")
     public ResponseEntity<Object> usuario(@Valid @RequestBody CadrastroEntidade cadrastroEntidade){
         try {
