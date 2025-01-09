@@ -166,7 +166,6 @@ projeto-cadastro-login
 
 <h2>Melhorias Futuras</h2>
     <ul>
-        <li>Implementação de JWT para autenticação.</li>
         <li>Criação de testes unitários e de integração.</li>
         <li>Integração com bibliotecas de front-end modernas como React ou Vue.js.</li>
     </ul>
