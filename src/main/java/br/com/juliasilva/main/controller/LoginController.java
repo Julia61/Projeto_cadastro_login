@@ -54,7 +54,6 @@ public class LoginController {
                 throw new EmailNotFoundExceptionOrPasswordWrong();
             }
 
-
                 String token = jwtProvider.gerarToken(autorDTO);
 
                 Cookie cookie = new Cookie("authToken", token);

@@ -7,6 +7,7 @@ import br.com.juliasilva.main.exception.EmailNotFoundExceptionOrPasswordWrong;
 import br.com.juliasilva.main.repository.RegisterRepository;
 import br.com.juliasilva.main.repository.LoginRepository;
 
+import br.com.juliasilva.main.user.EntityRegister;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -25,15 +26,15 @@ public class LoginRegistrationService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
+    @Autowired
+    private EntityRegister entityRegister;
+
     public boolean execute(AuthDTO autorDTO) {
 
-        var login = loginRepository.findByEmail(autorDTO.getEmail());
-        if (login.isPresent()) {
-
-            return passwordEncoder.matches(autorDTO.getSenha(), login.get().getSenha());
-        }
-
-        return false;
+        return loginRepository
+                .findByEmail(autorDTO.getEmail())
+                .map(login -> passwordEncoder.matches(autorDTO.getSenha(), login.getSenha()))
+                .orElse(false);
     }
 
 }
