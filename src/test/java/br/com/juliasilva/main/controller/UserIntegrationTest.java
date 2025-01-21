@@ -8,7 +8,6 @@ import br.com.juliasilva.main.dto.AuthDTO;
 import br.com.juliasilva.main.repository.RegisterRepository;
 
 import br.com.juliasilva.main.user.EntityRegister;
-import br.com.juliasilva.main.CreatToken;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -53,8 +52,6 @@ public class UserIntegrationTest {
     @Autowired
     private JWTProvider jwtProvider;
 
-    @Value("${security.token.secret}")
-    private String chaveSecreta;
 
     @BeforeEach
     public void setup(){
@@ -80,8 +77,6 @@ public class UserIntegrationTest {
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(registerJson))
                 .andExpect(MockMvcResultMatchers.status().isOk());
-
-
     }
 
     @Test
@@ -93,12 +88,10 @@ public class UserIntegrationTest {
 
         String loginJson = objectMapper.writeValueAsString(loginRequest);
 
-        String token = CreatToken.generateToken(loginRequest, chaveSecreta);
 
             mvc.perform(MockMvcRequestBuilders.post("/cadastro/login")
                             .contentType(MediaType.APPLICATION_JSON)
-                            .content(loginJson)
-                            .header("Authorization", "Bearer " + token))
+                            .content(loginJson))
                     .andExpect(MockMvcResultMatchers.status().isBadRequest());
 
     }
