@@ -2,6 +2,7 @@ package br.com.juliasilva.main.controller;
 
 
 import br.com.juliasilva.main.ProjetoCadrastroELoginApplication;
+import br.com.juliasilva.main.provider.JWTProvider;
 import br.com.juliasilva.main.useCase.LoginRegistrationService;
 import br.com.juliasilva.main.dto.AuthDTO;
 import br.com.juliasilva.main.repository.RegisterRepository;
@@ -48,6 +49,9 @@ public class UserIntegrationTest {
 
     @Autowired
     private LoginRegistrationService createLoginRegistrationService;
+
+    @Autowired
+    private JWTProvider jwtProvider;
 
     @Value("${security.token.secret}")
     private String chaveSecreta;
