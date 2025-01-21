@@ -10,11 +10,11 @@ async function verificarToken() {
             console.log('Token válido. Usuário autenticado.');
         } else {
             alert('Token expirado ou inválido. Redirecionando...');
-            window.location.href = 'pagina_login.html'; // Redirecionar para a página de login
+            window.location.href = 'pagina_login.html';
         }
     } catch (error) {
         console.error('Erro ao verificar o token:', error);
-        window.location.href = '/login.html'; // Redirecionar em caso de erro
+        window.location.href = '/login.html';
     }
 }
 

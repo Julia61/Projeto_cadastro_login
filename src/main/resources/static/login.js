@@ -2,7 +2,6 @@ function login(){
     const email = document.getElementById("emaillogin").value
     const senha = document.getElementById("senhalogin").value
 
-
     if(email && senha){
 
         const loginUser = {

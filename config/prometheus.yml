@@ -1,0 +1,11 @@
+global:
+  sample_limit: 15
+
+scrape_configs:
+  - job_name: "api-projeto-cadastro-login"
+    metrics_path: "/actuator/prometheus"
+    static_configs:
+      - targets: ["host.docker.internal:8080"]
+        labels:
+          application: "api-projeto-cadastro-login"
+    sample_limit: 10000

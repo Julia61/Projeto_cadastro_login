@@ -1,6 +1,6 @@
-package br.com.juliasilva.main.provedor;
+package br.com.juliasilva.main.provider;
 
-import br.com.juliasilva.main.dto.AutorDTO;
+import br.com.juliasilva.main.dto.AuthDTO;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import lombok.extern.slf4j.Slf4j;
@@ -11,13 +11,13 @@ import java.util.Date;
 
 @Slf4j
 @Service
-public class JWTProvedor {
+public class JWTProvider {
 
     @Value("${security.token.secret}")
     private String chaveSecreta;
 
 
-    public String gerarToken(AutorDTO autorDTO){
+    public String gerarToken(AuthDTO autorDTO){
         Algorithm algorithm = Algorithm.HMAC256(chaveSecreta);
         return JWT.create()
                 .withIssuer("login-app")

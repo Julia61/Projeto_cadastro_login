@@ -1,12 +1,37 @@
+networks:
+  gv-network:
+    driver: bridge
+
+volumes:
+  prometheus_data:
+  grafana_data:
+
 services:
   postgres:
     container_name: projeto_cadastro_login_postgres
     image: postgres:15
     ports:
       - 5432:5432
-    env_file:
-      - .env
     environment:
+      - SPRING_PROFILES_ACTIVE=prod
       - POSTGRES_USER=${USER_POSTGRES}
       - POSTGRES_PASSWORD=${PASSWORD_POSTGRES}
       - POSTGRES_DB=projeto_cadastro_login
+  prometheus:
+    container_name: prometheus_new
+    image: prom/prometheus:latest
+    volumes:
+      - ./config/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    networks:
+      - gv-network
+    ports:
+      - 9090:9090
+  grafana:
+      container_name: grafana_new
+      image: grafana/grafana:latest
+      ports:
+        - 3000:3000
+      networks:
+        - gv-network
+

@@ -8,7 +8,14 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
-public class Seguranca {
+public class Security {
+
+    private static final String[] SWAGGER_LIST = {
+            "/swagger-ui/**",
+            "/v3/api-docs/**",
+            "swagger-resources/**",
+            "/actuator/**"
+    };
 
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity https) throws Exception {
@@ -16,7 +23,8 @@ public class Seguranca {
                 .authorizeHttpRequests(auth -> {
                     auth.requestMatchers("/cadastro/usuario").permitAll()
                             .requestMatchers("/cadastro/login").permitAll()
-                            .requestMatchers("/user/dados-token").permitAll();
+                            .requestMatchers("/user/dados-token").permitAll()
+                            .requestMatchers(SWAGGER_LIST).permitAll();
 
                 });
 

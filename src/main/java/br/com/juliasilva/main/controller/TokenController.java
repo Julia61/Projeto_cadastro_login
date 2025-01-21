@@ -1,8 +1,7 @@
-package br.com.juliasilva.main.controlador;
+package br.com.juliasilva.main.controller;
 
-import br.com.juliasilva.main.casoDeUso.TokenServico;
+import br.com.juliasilva.main.useCase.TokenService;
 import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,14 +10,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/autor")
-public class TokenControlador {
+public class TokenController {
 
     @Autowired
-    private TokenServico tokenServico;
+    private TokenService tokenService;
 
     @GetMapping("/validate-token")
     public ResponseEntity<String> validarToken(HttpServletRequest request){
-        return tokenServico.validarToken(request);
+        return tokenService.validarToken(request);
     }
 
 
