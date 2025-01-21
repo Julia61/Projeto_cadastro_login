@@ -77,7 +77,6 @@ public class UserIntegrationTest {
                         .content(registerJson))
                 .andExpect(MockMvcResultMatchers.status().isOk());
 
-        System.out.println(register);
 
     }
 
