@@ -50,7 +50,10 @@ public class LoginController {
 
             boolean resultado = this.loginRegistrationService.execute(autorDTO);
 
-            if (resultado) {
+            if (!resultado) {
+                throw new EmailNotFoundExceptionOrPasswordWrong();
+            }
+
 
                 String token = jwtProvider.gerarToken(autorDTO);
 
@@ -63,9 +66,6 @@ public class LoginController {
                 response.addCookie(cookie);
 
                 return ResponseEntity.ok(token);
-            }else {
-                throw new EmailNotFoundExceptionOrPasswordWrong();
-            }
 
     }
 
