@@ -91,7 +91,7 @@
 		<dependency>
 			<groupId>com.fasterxml.jackson.datatype</groupId>
 			<artifactId>jackson-datatype-jsr310</artifactId>
-			<version>2.15.2</version> <!-- Certifique-se de usar a versão compatível com seu Jackson -->
+			<version>2.15.2</version>
 		</dependency>
 
 		<dependency>
@@ -127,9 +127,10 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>RELEASE</version>
-			<scope>compile</scope>
+			<version>7.8.0</version>
+			<scope>test</scope>
 		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -173,7 +174,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M5</version>
+				<version>3.1.0</version>
 				<configuration>
 					<useModulePath>false</useModulePath>
 				</configuration>
