@@ -49,9 +49,6 @@ public class UserIntegrationTest {
     @Autowired
     private LoginRegistrationService createLoginRegistrationService;
 
-    @Autowired
-    private JWTProvider jwtProvider;
-
 
     @BeforeEach
     public void setup(){
@@ -87,7 +84,6 @@ public class UserIntegrationTest {
                     .senha("senha_invalida").build();
 
         String loginJson = objectMapper.writeValueAsString(loginRequest);
-
 
             mvc.perform(MockMvcRequestBuilders.post("/cadastro/login")
                             .contentType(MediaType.APPLICATION_JSON)
