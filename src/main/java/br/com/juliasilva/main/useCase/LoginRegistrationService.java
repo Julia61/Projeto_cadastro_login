@@ -26,12 +26,14 @@ public class LoginRegistrationService {
     private PasswordEncoder passwordEncoder;
 
     public boolean execute(AuthDTO autorDTO) {
-        System.out.println("E-mail recebido no login: " + autorDTO.getEmail());
 
-        return loginRepository
-                .findByEmail(autorDTO.getEmail())
-                .map(login -> passwordEncoder.matches(autorDTO.getSenha(), login.getSenha()))
-                .orElse(false); // Retorna falso se o email não for encontrado
+        var login = loginRepository.findByEmail(autorDTO.getEmail());
+        if (login.isPresent()) {
+
+            return passwordEncoder.matches(autorDTO.getSenha(), login.get().getSenha());
+        }
+
+        return false;
     }
 
 }
