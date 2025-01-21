@@ -1,9 +1,6 @@
 package br.com.juliasilva.main.controller;
 
-
 import br.com.juliasilva.main.ProjetoCadrastroELoginApplication;
-import br.com.juliasilva.main.provider.JWTProvider;
-import br.com.juliasilva.main.useCase.LoginRegistrationService;
 import br.com.juliasilva.main.dto.AuthDTO;
 import br.com.juliasilva.main.repository.RegisterRepository;
 
@@ -14,7 +11,6 @@ import org.junit.jupiter.api.Test;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers;
@@ -26,9 +22,6 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
-
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, classes = ProjetoCadrastroELoginApplication.class)
@@ -45,10 +38,6 @@ public class UserIntegrationTest {
 
     @Autowired
     private ObjectMapper objectMapper;
-
-    @Autowired
-    private LoginRegistrationService createLoginRegistrationService;
-
 
     @BeforeEach
     public void setup(){
