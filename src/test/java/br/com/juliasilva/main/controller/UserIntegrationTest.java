@@ -47,9 +47,6 @@ public class UserIntegrationTest {
     private ObjectMapper objectMapper;
 
     @Autowired
-    private AuthDTO authController;
-
-    @Autowired
     private LoginRegistrationService createLoginRegistrationService;
 
     @Value("${security.token.secret}")
