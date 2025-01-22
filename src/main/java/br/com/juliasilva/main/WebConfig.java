@@ -15,6 +15,9 @@ public class WebConfig implements WebMvcConfigurer{
                 registry.addMapping("/**")
                         .allowedOrigins("https://projeto-cadastro-login.onrender.com")
                         .allowedOrigins("https://cadastro-login.onrender.com")
+                        .allowedOrigins("https://cadastro-login.onrender.com/pagina_cadastro.html")
+                        .allowedOrigins("https://cadastro-login.onrender.com/pagina_login.html")
+
                         .allowedOrigins("http://localhost:63342")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
