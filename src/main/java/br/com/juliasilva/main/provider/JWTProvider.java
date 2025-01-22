@@ -22,7 +22,7 @@ public class JWTProvider {
         return JWT.create()
                 .withIssuer("login-app")
                 .withClaim("email", autorDTO.getEmail())
-                .withExpiresAt(new Date(System.currentTimeMillis() + 1800000))
+                .withExpiresAt(new Date(System.currentTimeMillis() + 60000))
                 .sign(algorithm);
 
     }
