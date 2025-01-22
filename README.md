@@ -130,6 +130,8 @@ Além disso, você pode estar checando a aplicação que está disponível, faze
 
 ---
 
+<p>Desenvolvido com dedicação por <a href="https://github.com/Julia61" target="_blank"><strong>Julia</strong></a>. 🚀</p>
+
 Espero que gostem! 💻✨
 
 ---
