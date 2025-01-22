@@ -19,4 +19,4 @@ async function verificarToken() {
 }
 
 
-setInterval(verificarToken, 30 * 1000);
+setInterval(verificarToken, 5 * 60 * 1000);

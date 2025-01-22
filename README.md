@@ -1,8 +1,18 @@
-# Projeto de Cadastro e Login
-
-Oi, pessoal! 👋
-
-🛠️ Tenho novidades incríveis no meu projeto de Cadastro e Login, onde busquei aprimorar a segurança, experiência do usuário e boas práticas de desenvolvimento. Aqui estão as atualizações que implementei:
+<section>
+  <h1>Bem-vindo ao Projeto de Cadastro e Login</h1>
+  <p>
+    Uma aplicação desenvolvida para praticar conceitos fundamentais de <strong>Java</strong>, 
+    <strong>Spring Boot</strong> e integração com <strong>front-end</strong>. Este repositório contém o código 
+    completo da aplicação, desde a estrutura back-end até o front-end responsivo.
+  </p>
+  <div style="text-align: center; margin: 20px 0;">
+    <img 
+      src="https://github.com/user-attachments/assets/db881a14-0d8d-4434-800c-ac7e83fb8597" 
+      alt="Demonstração do projeto" 
+      style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 8px;"
+    />
+  </div>
+</section>
 
 ## Funcionalidades
 - **Cadastro de Usuários**: Permite criar contas com validação de dados e proteção de credenciais usando BCrypt.
