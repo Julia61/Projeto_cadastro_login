@@ -126,7 +126,8 @@ projeto-cadastro-login
 
 Esse projeto tem sido um excelente laboratório para consolidar conceitos fundamentais, como autenticação JWT, integração com front-end e back-end, e melhores práticas de segurança. 🚀
 
-Além disso, você pode estar checando a aplicação que está disponível, fazendo o cadastro e login para testar as funcionalidades. Confira mais detalhes no [meu repositório do GitHub](https://github.com/Julia61/Projeto_cadastro_login.git). 😉
+Além disso, você pode estar checando a aplicação que está disponível, fazendo o cadastro e login para testar as funcionalidades. Confira mais detalhes no [Aplicação](https://cadastro-login.onrender.com/pagina_cadastro.html). 😉
+E no [swagger](https://cadastro-login.onrender.com/swagger-ui/index.html#/). 🛠️
 
 ---
 
