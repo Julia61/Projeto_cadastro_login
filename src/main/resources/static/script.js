@@ -34,7 +34,7 @@ function cadastro(){
 
 
 
-        fetch("https://projeto-cadastro-login.onrender.com/cadastro/usuario", {
+        fetch("https://cadastro-login.onrender.com/cadastro/usuario", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
