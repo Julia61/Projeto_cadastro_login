@@ -24,6 +24,8 @@ public class Security {
                     auth.requestMatchers("/cadastro/usuario").permitAll()
                             .requestMatchers("/cadastro/login").permitAll()
                             .requestMatchers("/user/dados-token").permitAll()
+                            .requestMatchers("https://cadastro-login.onrender.com/pagina_cadastro.html").permitAll()
+                            .requestMatchers("https://cadastro-login.onrender.com/pagina_login.html").permitAll()
                             .requestMatchers(SWAGGER_LIST).permitAll();
 
                 });
