@@ -25,11 +25,14 @@ public class Security {
                             .requestMatchers("/cadastro/login").permitAll()
                             .requestMatchers("/user/dados-token").permitAll()
                             .requestMatchers(SWAGGER_LIST).permitAll()
-                            .anyRequest().authenticated();;
+                            .requestMatchers("/**").permitAll();
+
                 });
+
 
         return https.build();
     }
+
 
     @Bean
     public PasswordEncoder passwordEncoder(){
