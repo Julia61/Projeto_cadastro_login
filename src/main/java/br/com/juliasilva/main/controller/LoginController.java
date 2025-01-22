@@ -47,7 +47,6 @@ public class LoginController {
     })
     public ResponseEntity<Object> login(@Valid @RequestBody AuthDTO autorDTO, HttpServletResponse response){
 
-
             boolean resultado = this.loginRegistrationService.execute(autorDTO);
 
             if (!resultado) {
@@ -60,9 +59,9 @@ public class LoginController {
                 cookie.setHttpOnly(true);
                 cookie.setSecure(true);
                 cookie.setPath("/");
-                cookie.setMaxAge((int) TimeUnit.MINUTES.toMinutes(30));
+                cookie.setMaxAge((int) TimeUnit.MINUTES.toSeconds(30));
 
-                response.addCookie(cookie);
+        response.addCookie(cookie);
 
                 return ResponseEntity.ok(token);
 
