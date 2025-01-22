@@ -1,179 +1,135 @@
-<section>
-  <h1>Bem-vindo ao Projeto de Cadastro e Login</h1>
-  <p>
-    Uma aplicação desenvolvida para praticar conceitos fundamentais de <strong>Java</strong>, 
-    <strong>Spring Boot</strong> e integração com <strong>front-end</strong>. Este repositório contém o código 
-    completo da aplicação, desde a estrutura back-end até o front-end responsivo.
-  </p>
-  <div style="text-align: center; margin: 20px 0;">
-    <img 
-      src="https://github.com/user-attachments/assets/db881a14-0d8d-4434-800c-ac7e83fb8597" 
-      alt="Demonstração do projeto" 
-      style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 8px;"
-    />
-  </div>
-</section>
+# Projeto de Cadastro e Login
 
-<h2>Funcionalidades</h2>
-    <ul>
-        <li><strong>Cadastro de Usuários</strong>: Permite criar contas com validação de dados e proteção de credenciais usando BCrypt.</li>
-        <li><strong>Login de Usuários</strong>: Valida as credenciais de e-mail e senha.</li>
-        <li><strong>Exceções Personalizadas</strong>: Mensagens amigáveis para erros, como "Usuário já existe" ou "Credenciais inválidas".</li>
-        <li><strong>Integração Front-End/Back-End</strong>: Envio e recebimento de dados entre as interfaces.</li>
-        <li><strong>Banco de Dados PostgreSQL</strong>: Gerenciamento de dados de usuários utilizando Spring Data JPA.</li>
-        <li><strong>Interface Responsiva</strong>: Layout minimalista e adaptável para diferentes dispositivos.</li>
-    </ul>
+Oi, pessoal! 👋
 
-<h2>Tecnologias Utilizadas</h2>
-    <h3>Back-End</h3>
-    <ul>
-        <li><strong>Java 17</strong></li>
-        <li><strong>Spring Boot</strong></li>
-        <ul>
-            <li>Spring Data JPA</li>
-            <li>Spring Security</li>
-        </ul>
-        <li><strong>PostgreSQL</strong></li>
-        <li><strong>Docker</strong> (para gerenciamento do banco de dados)</li>
-        <li><strong>BCrypt</strong> (criptografia de senhas)</li>
-    </ul>
-    <h3>Front-End</h3>
-    <ul>
-        <li><strong>HTML5</strong></li>
-        <li><strong>CSS3</strong></li>
-        <li><strong>JavaScript</strong> - <code>fetch()</code> para chamadas à API</li>
-    </ul>
+🛠️ Tenho novidades incríveis no meu projeto de Cadastro e Login, onde busquei aprimorar a segurança, experiência do usuário e boas práticas de desenvolvimento. Aqui estão as atualizações que implementei:
 
-<h2>Como Executar o Projeto</h2>
-    <h3>Requisitos</h3>
-    <ul>
-        <li><strong>Java 17</strong> ou superior</li>
-        <li><strong>Maven</strong> instalado</li>
-        <li><strong>Docker</strong> e <strong>Docker Compose</strong> configurados</li>
-    </ul>
+## Funcionalidades
+- **Cadastro de Usuários**: Permite criar contas com validação de dados e proteção de credenciais usando BCrypt.
+- **Login de Usuários**: Valida as credenciais de e-mail e senha.
+- **Exceções Personalizadas**: Mensagens amigáveis para erros, como "Usuário já existe" ou "Credenciais inválidas".
+- **Integração Front-End/Back-End**: Envio e recebimento de dados entre as interfaces.
+- **Banco de Dados PostgreSQL**: Gerenciamento de dados de usuários utilizando Spring Data JPA.
+- **Interface Responsiva**: Layout minimalista e adaptável para diferentes dispositivos.
+- **Testes de Integração**: Desenvolvi dois testes para validar o funcionamento do cadastro e login.
 
-<h3>Passos</h3>
-<ol>
-    <li>
-        <strong>Clone o repositório:</strong>
-        <pre>
-            <code>
-https://github.com/Julia61/Projeto_cadastro_login.git
-            </code>
-        </pre>
-    </li>
-    <li>
-        <strong>Navegue até a pasta do projeto:</strong>
-        <pre>
-            <code>
-cd projeto-cadastro-login
-            </code>
-        </pre>
-    </li>
-    <li>
-        <strong>Suba o banco de dados PostgreSQL com Docker:</strong>
-        <pre>
-            <code>
-docker-compose up -d
-            </code>
-        </pre>
-    </li>
-    <li>
-        <strong>Execute o projeto com Maven:</strong>
-        <pre>
-            <code>
-mvn spring-boot:run
-            </code>
-        </pre>
-    </li>
-    <li>
-        <strong>Acesse a aplicação:</strong>
-        <ul>
-            <li>Endpoints da API: <code>http://localhost:8080</code></li>
-            <li>Interface front-end: <code>http://localhost:63342</code> (ajuste conforme o ambiente local)</li>
-        </ul>
-    </li>
-</ol>
+## Tecnologias Utilizadas
 
-<section>
-  <h2>Estrutura do Projeto</h2>
-  <pre style="background-color: #f4f4f4; padding: 15px; border-radius: 8px; border: 1px solid #ddd; overflow-x: auto;">
+### Back-End
+- Java 17
+- Spring Boot
+- Spring Data JPA
+- Spring Security
+- PostgreSQL
+- Docker (para gerenciamento do banco de dados)
+- BCrypt (criptografia de senhas)
+
+### Front-End
+- HTML5
+- CSS3
+- JavaScript - `fetch()` para chamadas à API
+
+## Como Executar o Projeto
+
+### Requisitos
+- Java 17 ou superior
+- Maven instalado
+- Docker e Docker Compose configurados
+
+### Passos
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/Julia61/Projeto_cadastro_login.git
+   ```
+
+2. **Navegue até a pasta do projeto:**
+   ```bash
+   cd projeto-cadastro-login
+   ```
+
+3. **Suba o banco de dados PostgreSQL com Docker:**
+   ```bash
+   docker-compose up -d
+   ```
+
+4. **Execute o projeto com Maven:**
+   ```bash
+   mvn spring-boot:run
+   ```
+
+5. **Acesse a aplicação:**
+   - **Endpoints da API:** [http://localhost:8080](http://localhost:8080)
+   - **Interface front-end:** [http://localhost:63342](http://localhost:63342) (ajuste conforme o ambiente local)
+
+## Estrutura do Projeto
+```plaintext
 projeto-cadastro-login
 ├── src
 │   ├── main
 │   │   ├── java
 │   │   │   ├── br.com.juliasilva.main
-│   │   │   │   ├── casoDeUso
-│   │   │   │   ├── controlador
+│   │   │   │   ├── config
+│   │   │   │   ├── controller
 │   │   │   │   ├── cripto
 │   │   │   │   ├── dto
-│   │   │   │   ├── excecao
-│   │   │   │   ├── repositorio
-│   │   │   │   └── usuario
+│   │   │   │   ├── exception
+│   │   │   │   ├── provider
+│   │   │   │   ├── repository
+│   │   │   │   ├── useCase
+│   │   │   │   └── user
 │   │   ├── resources
-│   │       ├── application.properties
-├── static
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
+│   │   │   ├── application.properties
+│   │   │   ├── static
+│   │   │   │   ├── index.html
+│   │   │   │   ├── style.css
+│   │   │   │   └── script.js
 └── docker-compose.yml
-  </pre>
-</section>
 
+```
 
-<h2>Endpoints Disponíveis</h2>
-    <h3>Cadastro de Usuário</h3>
-    <div class="highlight">
-        <strong>POST</strong> <code>/cadastro/usuario</code>
-        <br>
-        <strong>Body (JSON):</strong>
-        <pre>
-            <code>
+## Endpoints Disponíveis
+
+### Cadastro de Usuário
+**POST /cadastro/usuario**
+
+**Body (JSON):**
+```json
 {
   "usuario": "Julia",
   "email": "ju@gmail.com",
   "senha": "1234567890"
 }
-            </code>
-        </pre>
-        <strong>Respostas:</strong>
-        <ul>
-            <li><strong>200 OK</strong>: Usuário cadastrado com sucesso.</li>
-            <li><strong>400 Bad Request</strong>: Usuário ou e-mail já existentes.</li>
-        </ul>
-    </div>
+```
 
-<h3>Login de Usuário</h3>
-    <div class="highlight">
-        <strong>POST</strong> <code>/cadastro/login</code>
-        <br>
-        <strong>Body (JSON):</strong>
-        <pre>
-<code>
+**Respostas:**
+- `200 OK`: Usuário cadastrado com sucesso.
+- `400 Bad Request`: Usuário ou e-mail já existentes.
+
+### Login de Usuário
+**POST /cadastro/login**
+
+**Body (JSON):**
+```json
 {
   "email": "ju@gmail.com",
   "senha": "1234567890"
 }
- </code>
-        </pre>
-        <strong>Respostas:</strong>
-        <ul>
-            <li><strong>200 OK</strong>: Login realizado com sucesso.</li>
-            <li><strong>401 Unauthorized</strong>: Credenciais inválidas.</li>
-            <li><strong>500 Internal Server Error</strong>: Erro interno do servidor.</li>
-        </ul>
-    </div>
+```
 
-<h2>Melhorias Futuras</h2>
-    <ul>
-        <li>Criação de testes unitários e de integração.</li>
-        <li>Integração com bibliotecas de front-end modernas como React ou Vue.js.</li>
-    </ul>
+**Respostas:**
+- `200 OK`: Login realizado com sucesso.
+- `401 Unauthorized`: Credenciais inválidas.
+- `500 Internal Server Error`: Erro interno do servidor.
 
-<p>Desenvolvido com dedicação por <a href="https://github.com/Julia61" target="_blank"><strong>Julia</strong></a>. 🚀</p>
+---
 
+Esse projeto tem sido um excelente laboratório para consolidar conceitos fundamentais, como autenticação JWT, integração com front-end e back-end, e melhores práticas de segurança. 🚀
 
-    
+Além disso, você pode estar checando a aplicação que está disponível, fazendo o cadastro e login para testar as funcionalidades. Confira mais detalhes no [meu repositório do GitHub](https://github.com/Julia61/Projeto_cadastro_login.git). 😉
 
-    
+---
 
+Espero que gostem! 💻✨
+
+---
