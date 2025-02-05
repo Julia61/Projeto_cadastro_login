@@ -55,7 +55,7 @@ public class LoginRegistrationService {
         var roles = Arrays.asList("USER");
 
         Algorithm algorithm = Algorithm.HMAC256(chaveSecreta);
-        var expiresIn = Instant.now().plus(Duration.ofMinutes(1));
+        var expiresIn = Instant.now().plus(Duration.ofMinutes(30));
 
         var token = JWT.create()
                 .withIssuer("login-app")
