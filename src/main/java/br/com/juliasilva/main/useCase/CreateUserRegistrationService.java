@@ -16,17 +16,17 @@ public class CreateUserRegistrationService {
     @Autowired
     private PasswordEncoder passwordEnconter;
 
-    public EntityRegister execute(EntityRegister cadrastroEntidade) {
+    public EntityRegister execute(EntityRegister entityRegister) {
         this.registerRepository
-                .findByUsuarioOrEmail(cadrastroEntidade.getUsuario(), cadrastroEntidade.getEmail())
+                .findByUsuarioOrEmail(entityRegister.getUsuario(), entityRegister.getEmail())
                 .ifPresent((user) ->{
                     throw new UserException();
                 });
 
-        var senha = passwordEnconter.encode(cadrastroEntidade.getSenha());
-        cadrastroEntidade.setSenha(senha);
+        var senha = passwordEnconter.encode(entityRegister.getSenha());
+        entityRegister.setSenha(senha);
 
-        return this.registerRepository.save(cadrastroEntidade);
+        return this.registerRepository.save(entityRegister);
 
     }
 

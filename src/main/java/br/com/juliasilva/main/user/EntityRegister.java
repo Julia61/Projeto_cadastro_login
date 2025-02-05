@@ -17,7 +17,7 @@ import java.util.UUID;
 
 @Data
 @Entity
-@Table(name = "cadastro_login")
+@Table(name = "cadastro_usuario")
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
