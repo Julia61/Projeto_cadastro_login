@@ -24,7 +24,6 @@ public class RegistryController {
     @Autowired
     private CreateUserRegistrationService createUserRegistrationService;
 
-    //Cria o cadastro do usuário
     @PostMapping("/usuario")
     @PreAuthorize("hasRole('USER')")
     @Tag(name = "Cadastro", description = "Dados do usuário")
