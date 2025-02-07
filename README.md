@@ -5,13 +5,7 @@
     <strong>Spring Boot</strong> e integração com <strong>front-end</strong>. Este repositório contém o código 
     completo da aplicação, desde a estrutura back-end até o front-end responsivo.
   </p>
-  <div style="text-align: center; margin: 20px 0;">
-    <img 
-      src="https://github.com/user-attachments/assets/db881a14-0d8d-4434-800c-ac7e83fb8597" 
-      alt="Demonstração do projeto" 
-      style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 8px;"
-    />
-  </div>
+  
 </section>
 
 ## Funcionalidades
