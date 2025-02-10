@@ -1,12 +1,11 @@
-<section>
-  <h1>Bem-vindo ao Projeto de Cadastro e Login</h1>
-  <p>
-    Uma aplicação desenvolvida para praticar conceitos fundamentais de <strong>Java</strong>, 
-    <strong>Spring Boot</strong> e integração com <strong>front-end</strong>. Este repositório contém o código 
-    completo da aplicação, desde a estrutura back-end até o front-end responsivo.
-  </p>
+
+# Bem-vindo ao Projeto de Cadastro e Login</h1>
   
-</section>
+  Uma aplicação desenvolvida para praticar conceitos fundamentais de <strong>Java</strong>, 
+  <strong>Spring Boot</strong> e integração com <strong>front-end</strong>. Este repositório contém o código 
+  completo da aplicação, desde a estrutura back-end até o front-end responsivo.
+  
+[Front-end](https://github.com/Julia61/cadastro_login_front)
 
 ## Funcionalidades
 - **Cadastro de Usuários**: Permite criar contas com validação de dados e proteção de credenciais usando BCrypt.
